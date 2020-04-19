@@ -1,0 +1,37 @@
+  
+ <Context> 
+  <Resource 
+		name="jdbc/OracleDB" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		username="scott" 
+		password="tiger" 
+		driverClassName="oracle.jdbc.driver.OracleDriver" 
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+		url="jdbc:oracle:thin:@localhost:1521:xe" 
+		maxActive="50" 
+		maxIdle="10"/> 
+	<!-- <Resource 
+		name="jdbc/OracleDB" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		username="aws" 
+		password="a6245248aa" 
+		driverClassName="oracle.jdbc.driver.OracleDriver" 
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+		url="jdbc:oracle:thin:@aws.cx4lucanc2h8.ap-northeast-2.rds.amazonaws.com:1521:aws" 
+		maxActive="50" 
+		maxIdle="10"/> 
+		
+	<Resource 
+		name="jdbc/MySql" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		username="root" 
+		password="mysql" 
+		driverClassName="com.mysql.jdbc.Driver" 
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+		url="jdbc:mysql://localhost:3306/test" 
+		maxActive="100" 
+		maxIdle="10"/> -->
+</Context>
